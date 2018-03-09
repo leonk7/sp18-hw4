@@ -1,0 +1,24 @@
+<div>
+  <h2>Database Entries</h2>
+  <h4>Cats</h4>
+  <p>
+    <% @cats.each do |c| %>
+      <%= c.name %></br>
+    <% end %>
+  </p>
+  <h4>Users</h4>
+  <p>
+    <% @users.each do |u| %>
+      <%= u.username %>
+      <%= u.email %>
+      <%= u.age %></br>
+    <% end %>
+  </p>
+  <h4>Todos</h4>
+  <p>
+    <% @todos.each do |t| %>
+      <%= t.tasks %>
+      <%= t.finished %></br>
+    <% end %>
+  </p>
+</div>
